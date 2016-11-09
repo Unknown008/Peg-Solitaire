@@ -17,9 +17,9 @@ $m add command -label "Switch to European version" -command [list game_set eur] 
 $m add command -label "Switch to English version" -command [list game_set eng] -accelerator Ctrl-S
 $m add command -label "Restart game" -command [list game_set ""] -accelerator Ctrl-R
 
-bind . <Control-KeyPress-A> {game_set eur}
-bind . <Control-KeyPress-S> {game_set eur}
-bind . <Control-KeyPress-R> {game_set ""}
+bind . <Control-KeyPress-a> {game_set eur}
+bind . <Control-KeyPress-s> {game_set eng}
+bind . <Control-KeyPress-r> {game_set ""}
 
 set m $menu.help
 menu $m -tearoff 0
